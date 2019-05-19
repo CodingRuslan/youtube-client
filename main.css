@@ -1,0 +1,69 @@
+body {
+  overflow-x: hidden;
+  background: #e4e4e4; }
+  body .wrap-input {
+    text-align: center;
+    margin: 3rem 0 0 0; }
+    body .wrap-input input {
+      width: 60%;
+      font-weight: 900;
+      border: .3rem solid #b6b6b6;
+      border-radius: 2rem;
+      padding-left: 10px;
+      outline: none; }
+    body .wrap-input button {
+      color: white;
+      height: 30px;
+      background-color: #b6b6b6;
+      border: 5px solid #b6b6b6;
+      border-top-right-radius: 1rem;
+      border-bottom-right-radius: 1rem;
+      transform: translate(-15px, -1px);
+      outline: none; }
+  body .container {
+    --n: 1;
+    display: flex;
+    margin-top: 40px;
+    width: calc(var(--n)*100%);
+    height: 40vw;
+    max-height: 100vh;
+    transform: translate(calc(var(--i, 0)/var(--n)*-100%)); }
+    body .container .clip-wrap {
+      background-color: white;
+      height: 450px;
+      width: 260px;
+      margin: 0 58px;
+      user-select: none;
+      pointer-events: none;
+      border-radius: 15px 15px 15px 15px;
+      font-weight: bold;
+      text-align: center; }
+      body .container .clip-wrap .prev-img {
+        width: 100%;
+        position: relative;
+        top: 20px; }
+      body .container .clip-wrap .clip-title {
+        position: relative;
+        bottom: 100px;
+        text-align: center;
+        z-index: 9999; }
+        body .container .clip-wrap .clip-title p {
+          background-color: yellow;
+          font-size: 20px; }
+      body .container .clip-wrap .clip-chanel, body .container .clip-wrap .clip-date, body .container .clip-wrap .clip-description {
+        display: block;
+        position: relative;
+        bottom: 30px; }
+  body .btn-prev, body .btn-next {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    bottom: 150px;
+    left: 42.5%;
+    margin: 30px; }
+
+.smooth {
+  transition: transform calc(var(--f, 1)*.5s) ease-out; }
+
+
+/*# sourceMappingURL=main.css.map*/
